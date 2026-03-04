@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Grit Builders - our story, values, and the team behind our award-winning design-build construction.">
-    <title>About Us | Grit Builders</title>
+    <meta name="description" content="About GRIT Builders - Portland's trusted remodeling contractor. 25+ years of experience, licensed &amp; insured, 4.9-star Google rating.">
+    <title>About Us | GRIT Builders Portland</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,9 +20,20 @@
             </a>
             <ul class="nav__menu" id="navMenu">
                 <li><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__dropdown">
+                    <a href="#" class="nav__link">Services <span class="nav__arrow">&#9662;</span></a>
+                    <ul class="nav__dropdown-menu">
+                        <li><a href="services-kitchen.html">Kitchen Remodeling</a></li>
+                        <li><a href="services-bathroom.html">Bathroom Remodeling</a></li>
+                        <li><a href="services-additions.html">Home Additions</a></li>
+                        <li><a href="services-whole-home.html">Whole-Home Remodeling</a></li>
+                    </ul>
+                </li>
+                <li><a href="projects.html" class="nav__link">Projects</a></li>
+                <li><a href="process.html" class="nav__link">Our Process</a></li>
                 <li><a href="about.html" class="nav__link active">About</a></li>
                 <li><a href="contact.html" class="nav__link">Contact</a></li>
-                <li><a href="contact.html" class="nav__link nav__cta">Get a Quote</a></li>
+                <li><a href="contact.html" class="nav__link nav__cta">Schedule Consultation</a></li>
             </ul>
             <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu">
                 <span class="hamburger"></span>
@@ -34,8 +45,32 @@
     <section class="page-hero">
         <div class="page-hero__overlay"></div>
         <div class="page-hero__content container">
-            <h1 class="page-hero__title">About Grit Builders</h1>
-            <p class="page-hero__subtitle">Building excellence through integrity, craftsmanship, and an unwavering commitment to our clients.</p>
+            <h1 class="page-hero__title">About GRIT Builders</h1>
+            <p class="page-hero__subtitle">Portland's trusted remodeling contractor since 2001. Building excellence through integrity, craftsmanship, and an unwavering commitment to our clients.</p>
+        </div>
+    </section>
+
+    <!-- Credibility Bar -->
+    <section class="credibility-bar">
+        <div class="container">
+            <div class="credibility-bar__grid">
+                <div class="credibility-bar__item">
+                    <span class="credibility-bar__number">25+</span>
+                    <span class="credibility-bar__label">Years in Business</span>
+                </div>
+                <div class="credibility-bar__item">
+                    <span class="credibility-bar__number">500+</span>
+                    <span class="credibility-bar__label">Projects Completed</span>
+                </div>
+                <div class="credibility-bar__item">
+                    <span class="credibility-bar__number">4.9</span>
+                    <span class="credibility-bar__label">Google Rating</span>
+                </div>
+                <div class="credibility-bar__item">
+                    <span class="credibility-bar__number">200+</span>
+                    <span class="credibility-bar__label">5-Star Reviews</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -45,16 +80,68 @@
             <div class="about-story__grid">
                 <div class="about-story__content">
                     <p class="section__subtitle">Our Story</p>
-                    <h2 class="section__title">From Humble Beginnings to Award-Winning Excellence</h2>
-                    <p>Grit Builders began as a small custom woodworking shop, specializing in interior finish carpentry. Since those early days, our founder and the team have been earning the trust of delighted customers for over two decades.</p>
-                    <p>What started with a commitment to quality craftsmanship has grown into a full-service design-build firm. Today, we bring together architects, designers, and master craftspeople under one roof to deliver homes that inspire.</p>
-                    <p>Our name says it all &mdash; <strong>Grit</strong>. It's the determination to get every detail right, the perseverance to solve complex challenges, and the tenacity to deliver nothing less than excellence on every single project.</p>
+                    <h2 class="section__title">From Craft to Company</h2>
+                    <p>GRIT Builders began in 2001 as a small finish carpentry crew with a simple mission: do exceptional work, communicate honestly, and treat every home like our own. Our founder, James Davis, built the company one satisfied customer at a time.</p>
+                    <p>Over 25 years, that small crew has grown into a full-service design-build remodeling firm serving the Portland metro area. Today, our team of designers, project managers, and skilled tradespeople works together to deliver remodels that Portland homeowners are proud of.</p>
+                    <p>Our name says it all — <strong>GRIT</strong>. It's the determination to get every detail right, the perseverance to solve complex challenges, and the commitment to deliver nothing less than excellence on every project.</p>
                 </div>
                 <div class="about-story__image">
                     <div class="about-story__image-placeholder">
                         <div class="placeholder__icon">&#9670;</div>
-                        <span>Our Workshop</span>
+                        <span>Our Team at Work</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals -->
+    <section class="about-trust section section--accent">
+        <div class="container">
+            <p class="section__subtitle">Why Homeowners Trust Us</p>
+            <h2 class="section__title">Credentials & Commitments</h2>
+            <div class="about-trust__grid">
+                <div class="about-trust__card">
+                    <div class="about-trust__icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <polyline points="9 12 11 14 15 10"/>
+                        </svg>
+                    </div>
+                    <h3>Licensed & Insured</h3>
+                    <p>Oregon CCB #123456. Full general liability and workers' compensation coverage on every project.</p>
+                </div>
+                <div class="about-trust__card">
+                    <div class="about-trust__icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </div>
+                    <h3>4.9-Star Google Rating</h3>
+                    <p>Over 200 verified reviews from Portland homeowners. Our reputation is built on consistent quality and client care.</p>
+                </div>
+                <div class="about-trust__card">
+                    <div class="about-trust__icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>Transparent Pricing</h3>
+                    <p>Detailed written proposals with line-by-line costs. No hidden fees, no surprises, no change-order games.</p>
+                </div>
+                <div class="about-trust__card">
+                    <div class="about-trust__icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Dedicated Project Manager</h3>
+                    <p>One point of contact from start to finish. Your project manager handles scheduling, communication, and quality control.</p>
                 </div>
             </div>
         </div>
@@ -90,39 +177,8 @@
         </div>
     </section>
 
-    <!-- Design-Build Process -->
-    <section class="process section">
-        <div class="container">
-            <p class="section__subtitle">How We Work</p>
-            <h2 class="section__title">Our Design-Build Process</h2>
-            <p class="section__description">We've streamlined the home building and remodeling process so you get the space you've always wanted &mdash; with less stress and more confidence.</p>
-            <div class="process__grid">
-                <div class="process-step">
-                    <div class="process-step__number">1</div>
-                    <h3 class="process-step__title">Consultation</h3>
-                    <p class="process-step__text">We meet with you to understand your goals, lifestyle, and budget. Every great project starts with a great conversation.</p>
-                </div>
-                <div class="process-step">
-                    <div class="process-step__number">2</div>
-                    <h3 class="process-step__title">Design</h3>
-                    <p class="process-step__text">Our design team creates detailed plans and 3D renderings. Visit our design studio to select materials and finishes.</p>
-                </div>
-                <div class="process-step">
-                    <div class="process-step__number">3</div>
-                    <h3 class="process-step__title">Build</h3>
-                    <p class="process-step__text">Our skilled craftspeople bring the design to life with precision and care. We keep you informed every step of the way.</p>
-                </div>
-                <div class="process-step">
-                    <div class="process-step__number">4</div>
-                    <h3 class="process-step__title">Deliver</h3>
-                    <p class="process-step__text">We walk through every detail together, ensuring everything meets our exacting standards and your complete satisfaction.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Team Section -->
-    <section class="team section section--accent">
+    <section class="team section">
         <div class="container">
             <p class="section__subtitle">The People Behind the Craft</p>
             <h2 class="section__title">Meet Our Leadership</h2>
@@ -133,7 +189,7 @@
                     </div>
                     <h3 class="team-card__name">James Davis</h3>
                     <p class="team-card__role">Founder & President</p>
-                    <p class="team-card__bio">With over 25 years of construction experience, James founded Grit Builders on the principle that every home deserves exceptional craftsmanship.</p>
+                    <p class="team-card__bio">With over 25 years of construction experience, James founded GRIT Builders on the principle that every home deserves exceptional craftsmanship.</p>
                 </div>
                 <div class="team-card">
                     <div class="team-card__photo">
@@ -141,7 +197,7 @@
                     </div>
                     <h3 class="team-card__name">Lisa Martinez</h3>
                     <p class="team-card__role">Director of Design</p>
-                    <p class="team-card__bio">Lisa leads our design studio, bringing a keen eye for detail and a passion for creating spaces that are both beautiful and functional.</p>
+                    <p class="team-card__bio">Lisa leads our design team, bringing a keen eye for detail and a passion for creating spaces that are both beautiful and functional.</p>
                 </div>
                 <div class="team-card">
                     <div class="team-card__photo">
@@ -155,13 +211,39 @@
         </div>
     </section>
 
+    <!-- Service Area -->
+    <section class="service-area section section--accent">
+        <div class="container">
+            <p class="section__subtitle">Where We Work</p>
+            <h2 class="section__title">Serving the Portland Metro Area</h2>
+            <p class="section__description">We proudly serve homeowners throughout the greater Portland area.</p>
+            <div class="service-area__list">
+                <span class="service-area__tag">Portland</span>
+                <span class="service-area__tag">Lake Oswego</span>
+                <span class="service-area__tag">West Linn</span>
+                <span class="service-area__tag">Tigard</span>
+                <span class="service-area__tag">Beaverton</span>
+                <span class="service-area__tag">Hillsboro</span>
+                <span class="service-area__tag">Oregon City</span>
+                <span class="service-area__tag">Milwaukie</span>
+                <span class="service-area__tag">Clackamas</span>
+                <span class="service-area__tag">Tualatin</span>
+                <span class="service-area__tag">Sherwood</span>
+                <span class="service-area__tag">Wilsonville</span>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta section">
         <div class="cta__overlay"></div>
         <div class="container cta__content">
             <h2 class="cta__title">Let's Build Something Great Together</h2>
-            <p class="cta__text">Ready to start your project? We'd love to hear about your vision.</p>
-            <a href="contact.html" class="btn btn--primary btn--large">Contact Us Today</a>
+            <p class="cta__text">Ready to start your project? Schedule a free consultation today.</p>
+            <div class="cta__buttons">
+                <a href="contact.html" class="btn btn--primary btn--large">Schedule Consultation</a>
+                <a href="tel:+15551234567" class="btn btn--outline btn--large">Call (555) 123-4567</a>
+            </div>
         </div>
     </section>
 
@@ -174,35 +256,38 @@
                         <span class="logo__grit">GRIT</span>
                         <span class="logo__builders">BUILDERS</span>
                     </a>
-                    <p class="footer__tagline">Building Excellence With Integrity</p>
-                    <p class="footer__description">Premium design-build construction, remodeling, and custom homes. Serving our community with craftsmanship and dedication.</p>
-                </div>
-                <div class="footer__links">
-                    <h4 class="footer__heading">Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                    <p class="footer__tagline">Trusted Remodeling in Portland</p>
+                    <p class="footer__description">Licensed Oregon contractor specializing in kitchen remodeling, bathroom remodeling, home additions, and whole-home renovations.</p>
+                    <p class="footer__license">CCB #123456 | Licensed &amp; Insured</p>
                 </div>
                 <div class="footer__links">
                     <h4 class="footer__heading">Services</h4>
                     <ul>
-                        <li><a href="#">Custom Homes</a></li>
-                        <li><a href="#">Remodeling</a></li>
-                        <li><a href="#">Additions</a></li>
-                        <li><a href="#">Design Studio</a></li>
+                        <li><a href="services-kitchen.html">Kitchen Remodeling</a></li>
+                        <li><a href="services-bathroom.html">Bathroom Remodeling</a></li>
+                        <li><a href="services-additions.html">Home Additions</a></li>
+                        <li><a href="services-whole-home.html">Whole-Home Remodeling</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__heading">Company</h4>
+                    <ul>
+                        <li><a href="projects.html">Our Projects</a></li>
+                        <li><a href="process.html">Our Process</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer__contact">
                     <h4 class="footer__heading">Get In Touch</h4>
-                    <p>123 Builder's Way<br>Your City, ST 00000</p>
+                    <p>Portland, OR Metro Area</p>
                     <p><a href="tel:+15551234567">(555) 123-4567</a></p>
                     <p><a href="mailto:info@gritbuilders.net">info@gritbuilders.net</a></p>
+                    <a href="contact.html" class="btn btn--primary btn--small footer__cta-btn">Free Consultation</a>
                 </div>
             </div>
             <div class="footer__bottom">
-                <p>&copy; 2026 Grit Builders. All rights reserved.</p>
+                <p>&copy; 2026 GRIT Builders. All rights reserved. Serving Portland, Lake Oswego, West Linn, Tigard, Beaverton &amp; surrounding areas.</p>
             </div>
         </div>
     </footer>

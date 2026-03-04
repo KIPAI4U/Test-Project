@@ -15,15 +15,36 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
         });
 
-        // Close menu when a link is clicked
+        // Close menu when a non-dropdown link is clicked
         navMenu.querySelectorAll('.nav__link').forEach(link => {
-            link.addEventListener('click', () => {
-                navToggle.classList.remove('active');
-                navMenu.classList.remove('open');
-                document.body.style.overflow = '';
-            });
+            if (!link.closest('.nav__dropdown') || link.closest('.nav__dropdown-menu')) {
+                link.addEventListener('click', () => {
+                    navToggle.classList.remove('active');
+                    navMenu.classList.remove('open');
+                    document.body.style.overflow = '';
+                });
+            }
         });
     }
+
+    // --- Mobile dropdown toggle ---
+    const dropdowns = document.querySelectorAll('.nav__dropdown');
+    dropdowns.forEach(dropdown => {
+        const trigger = dropdown.querySelector(':scope > .nav__link');
+        if (trigger && window.innerWidth <= 768) {
+            trigger.addEventListener('click', (e) => {
+                e.preventDefault();
+                dropdown.classList.toggle('open');
+            });
+        }
+    });
+
+    // Close dropdowns on resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            dropdowns.forEach(d => d.classList.remove('open'));
+        }
+    });
 
     // --- Header scroll effect ---
     const header = document.getElementById('header');
@@ -37,9 +58,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- Scroll fade-in animations ---
-    const fadeElements = document.querySelectorAll(
-        '.service-card, .testimonial-card, .stat, .value-card, .process-step, .team-card, .contact-info-card'
-    );
+    const fadeSelectors = [
+        '.service-card', '.testimonial-card', '.stat', '.value-card',
+        '.process-step', '.team-card', '.contact-info-card',
+        '.project-card', '.trust-item', '.about-trust__card',
+        '.process-detail__step', '.feature-item', '.credibility-bar__item'
+    ];
+    const fadeElements = document.querySelectorAll(fadeSelectors.join(', '));
 
     fadeElements.forEach(el => el.classList.add('fade-in'));
 
@@ -70,7 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const tick = (now) => {
                 const elapsed = now - start;
                 const progress = Math.min(elapsed / duration, 1);
-                // Ease-out cubic
                 const eased = 1 - Math.pow(1 - progress, 3);
                 el.textContent = Math.round(target * eased);
                 if (progress < 1) requestAnimationFrame(tick);
@@ -91,6 +115,31 @@ document.addEventListener('DOMContentLoaded', () => {
         statNumbers.forEach(el => statsObserver.observe(el));
     }
 
+    // --- Project category filters ---
+    const filterButtons = document.querySelectorAll('.filter__btn');
+    const projectCards = document.querySelectorAll('.project-card[data-category]');
+
+    if (filterButtons.length && projectCards.length) {
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+
+                // Update active button
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Filter cards
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    }
+
     // --- Contact form handling ---
     const contactForm = document.getElementById('contactForm');
     const formSuccess = document.getElementById('formSuccess');
@@ -98,10 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm && formSuccess) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-
-            // Basic client-side validation is handled by HTML5 required attributes
-            // In production, this would send data to a server endpoint
-
             contactForm.style.display = 'none';
             formSuccess.hidden = false;
         });
