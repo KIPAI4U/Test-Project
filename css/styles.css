@@ -190,27 +190,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav__logo {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 0;
+    gap: 0.4rem;
     z-index: 1001;
 }
 .logo__rooflines {
     display: block;
-    width: 48px;
-    height: 18px;
-    margin-bottom: 2px;
+    width: 36px;
+    height: 12px;
+    margin: 0 auto 1px;
 }
 .logo__rooflines line {
     stroke: var(--color-accent);
-    stroke-width: 2;
+    stroke-width: 1.8;
     stroke-linecap: round;
     transition: stroke var(--transition-base);
 }
-.logo__text {
+.logo__builders-group {
     display: flex;
-    align-items: baseline;
-    gap: 0.4rem;
+    flex-direction: column;
+    align-items: center;
 }
 .logo__grit {
     font-family: var(--font-heading);
@@ -1468,7 +1467,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer__logo .logo__grit { color: var(--color-white); }
 .footer__logo .logo__rooflines line { stroke: var(--color-accent); }
-.footer__logo { flex-direction: column; align-items: flex-start; }
 .footer__tagline { font-size: 0.85rem; color: var(--color-accent); font-weight: 500; margin-bottom: 0.75rem; }
 .footer__description { font-size: 0.85rem; line-height: 1.7; max-width: 300px; }
 .footer__license { font-size: 0.8rem; color: rgba(255,255,255,0.4); margin-top: 0.75rem; }
