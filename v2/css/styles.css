@@ -423,6 +423,34 @@ ul {
     font-size: 1.15rem;
 }
 
+/* ===== Trust Bar ===== */
+.trust-bar {
+    background: var(--color-primary);
+    padding: 1rem 0;
+}
+
+.trust-bar__grid {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.trust-bar__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-white);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.trust-bar__icon {
+    color: var(--color-accent);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
 /* ===== Featured Projects ===== */
 .featured-projects {
     padding-top: 4rem;
@@ -454,7 +482,7 @@ ul {
 }
 
 .featured-card__placeholder {
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/2;
     background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
     display: flex;
     align-items: center;
@@ -471,20 +499,21 @@ ul {
 }
 
 .featured-card__content {
-    padding: 1.5rem;
+    padding: 1.75rem;
 }
 
 .featured-card__title {
     font-family: var(--font-heading);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--color-primary);
     margin-bottom: 0.25rem;
 }
 
 .featured-card__location {
-    color: var(--color-gray);
+    color: var(--color-accent-hover);
     font-size: 0.9rem;
-    margin-bottom: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .featured-card__link {
@@ -509,33 +538,53 @@ ul {
 .google-reviews__badge {
     text-align: center;
     margin-bottom: 3rem;
+    background: var(--color-white);
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.google-reviews .container {
+    text-align: center;
 }
 
 .google-reviews__stars {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--color-stars);
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin-bottom: 0.5rem;
 }
 
 .google-reviews__rating {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     color: var(--color-gray-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .google-reviews__score {
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--color-primary);
 }
 
+.google-reviews__label {
+    font-weight: 500;
+}
+
 .google-reviews__divider {
-    margin: 0 0.75rem;
+    margin: 0 0.25rem;
     color: var(--color-gray-light);
 }
 
 .google-reviews__count {
-    font-weight: 600;
+    font-weight: 700;
+    color: var(--color-primary);
 }
 
 .google-reviews__grid {
@@ -550,6 +599,8 @@ ul {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow);
     transition: var(--transition);
+    text-align: left;
+    border-left: 4px solid var(--color-accent);
 }
 
 .review-card:hover {
@@ -559,13 +610,13 @@ ul {
 
 .review-card__stars {
     color: var(--color-stars);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     margin-bottom: 1rem;
 }
 
 .review-card__text {
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1.7;
     color: var(--color-text);
     margin-bottom: 1rem;
@@ -573,9 +624,16 @@ ul {
 }
 
 .review-card__author {
-    color: var(--color-gray);
+    color: var(--color-gray-dark);
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.review-card__source {
+    color: var(--color-gray);
+    font-size: 0.8rem;
+    font-weight: 400;
 }
 
 .google-reviews__cta {
@@ -1968,11 +2026,23 @@ ul {
         font-size: 2rem;
     }
 
+    .trust-bar__grid {
+        gap: 1rem 2rem;
+    }
+
+    .trust-bar__item {
+        font-size: 0.85rem;
+    }
+
     .featured-projects__grid,
     .services-overview__grid,
     .testimonials__grid,
     .projects__grid {
         grid-template-columns: 1fr;
+    }
+
+    .google-reviews__badge {
+        padding: 1.25rem 2rem;
     }
 
     .google-reviews__grid {
