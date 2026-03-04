@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact GRIT Builders to schedule a free remodeling consultation. Serving the Portland metro area.">
+    <title>Contact Us | GRIT Builders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="header__inner container">
+            <a href="index.html" class="header__logo">GRIT<span>Builders</span></a>
+            <nav class="header__nav" id="nav">
+                <a href="index.html" class="header__link">Home</a>
+                <a href="projects.html" class="header__link">Projects</a>
+                <a href="services.html" class="header__link">Services</a>
+                <a href="process.html" class="header__link">Process</a>
+                <a href="service-areas.html" class="header__link">Service Areas</a>
+                <a href="contact.html" class="header__link header__link--active">Contact</a>
+            </nav>
+            <a href="contact.html" class="btn btn--accent header__cta">Schedule Consultation</a>
+            <button class="header__hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-hero__title">Start Your Remodeling Project</h1>
+            <p class="page-hero__subtitle">Schedule a free consultation or request an estimate. We'd love to hear about your vision.</p>
+        </div>
+    </section>
+
+    <!-- Quick Contact Bar -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="quick-contact__grid">
+                <div class="quick-contact__item">
+                    <span class="quick-contact__icon">📞</span>
+                    <div>
+                        <p class="quick-contact__label">Call Us</p>
+                        <p class="quick-contact__value">(503) 555-0123</p>
+                    </div>
+                </div>
+                <div class="quick-contact__item">
+                    <span class="quick-contact__icon">✉️</span>
+                    <div>
+                        <p class="quick-contact__label">Email Us</p>
+                        <p class="quick-contact__value">info@gritbuilders.net</p>
+                    </div>
+                </div>
+                <div class="quick-contact__item">
+                    <span class="quick-contact__icon">📍</span>
+                    <div>
+                        <p class="quick-contact__label">Service Area</p>
+                        <p class="quick-contact__value">Portland Metro Area</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section section">
+        <div class="container">
+            <div class="contact-form-layout">
+
+                <div class="contact-form-main">
+                    <h2>Schedule a Consultation</h2>
+                    <p>Fill out the form below and we'll get back to you within one business day.</p>
+                    <form class="contact-form" id="contact-form">
+                        <div class="contact-form__row">
+                            <div class="contact-form__field">
+                                <label for="name">Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required placeholder="Your full name">
+                            </div>
+                            <div class="contact-form__field">
+                                <label for="phone">Phone <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(503) 555-0000">
+                            </div>
+                        </div>
+                        <div class="contact-form__field">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="you@email.com">
+                        </div>
+                        <div class="contact-form__field">
+                            <label for="project-type">Project Type <span class="required">*</span></label>
+                            <select id="project-type" name="project-type" required>
+                                <option value="">Select a project type</option>
+                                <option value="kitchen">Kitchen Remodel</option>
+                                <option value="bathroom">Bathroom Remodel</option>
+                                <option value="addition">Home Addition</option>
+                                <option value="whole-home">Whole-Home Remodel</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="contact-form__field" id="estimate">
+                            <label for="description">Project Description</label>
+                            <textarea id="description" name="description" rows="5" placeholder="Tell us about your project — goals, budget range, timeline, anything that helps us understand your vision."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--accent btn--lg contact-form__submit">Schedule Consultation</button>
+                    </form>
+                </div>
+
+                <aside class="contact-sidebar">
+                    <div class="contact-sidebar__card contact-sidebar__card--cta">
+                        <h3>Free Consultation</h3>
+                        <p>Every project starts with a free in-home consultation. We'll discuss your vision, assess your space, and provide an honest project overview.</p>
+                        <p><strong>No obligation. No pressure.</strong></p>
+                    </div>
+
+                    <div class="contact-sidebar__card">
+                        <h3>Why GRIT Builders?</h3>
+                        <ul class="contact-sidebar__list">
+                            <li>25+ years of experience</li>
+                            <li>4.9 ★ Google rating</li>
+                            <li>Licensed &amp; insured (CCB# 123456)</li>
+                            <li>Fixed-price contracts</li>
+                            <li>Dedicated project manager</li>
+                            <li>Daily progress updates</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-sidebar__card">
+                        <h3>Service Areas</h3>
+                        <div class="contact-sidebar__areas">
+                            <a href="lake-oswego-remodeling.html">Lake Oswego</a>
+                            <a href="west-linn-remodeling.html">West Linn</a>
+                            <a href="beaverton-remodeling.html">Beaverton</a>
+                            <a href="bethany-remodeling.html">Bethany</a>
+                            <a href="service-areas.html">+ More</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-sidebar__card">
+                        <h3>Leave Us a Review</h3>
+                        <p>Had a great experience? We'd love to hear from you.</p>
+                        <a href="#" class="btn btn--outline btn--sm" target="_blank" rel="noopener">Review on Google</a>
+                    </div>
+
+                    <div class="contact-sidebar__map">
+                        <div class="contact-sidebar__map-placeholder">
+                            <span>Google Map Embed — Replace with your Google Maps iframe</span>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__col">
+                <a href="index.html" class="footer__logo">GRIT<span>Builders</span></a>
+                <p class="footer__tagline">Portland's trusted remodeling contractor.</p>
+                <div class="footer__google-badge"><span class="footer__stars">★★★★★</span> <span>4.9 Google Rating</span></div>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Navigation</h4>
+                <a href="index.html" class="footer__link">Home</a>
+                <a href="projects.html" class="footer__link">Projects</a>
+                <a href="services.html" class="footer__link">Services</a>
+                <a href="process.html" class="footer__link">Process</a>
+                <a href="contact.html" class="footer__link">Contact</a>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Service Areas</h4>
+                <a href="lake-oswego-remodeling.html" class="footer__link">Lake Oswego</a>
+                <a href="west-linn-remodeling.html" class="footer__link">West Linn</a>
+                <a href="beaverton-remodeling.html" class="footer__link">Beaverton</a>
+                <a href="bethany-remodeling.html" class="footer__link">Bethany</a>
+                <a href="service-areas.html" class="footer__link">All Service Areas</a>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Contact</h4>
+                <p class="footer__text">(503) 555-0123</p>
+                <p class="footer__text">info@gritbuilders.net</p>
+                <a href="contact.html" class="btn btn--accent btn--sm">Schedule Consultation</a>
+            </div>
+        </div>
+        <div class="footer__bottom container">
+            <p>&copy; 2026 GRIT Builders. All rights reserved. Licensed &amp; Insured. CCB# 123456</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
