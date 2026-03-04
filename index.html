@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Grit Builders - Premium design-build construction, remodeling, and custom homes. Building excellence with integrity.">
-    <title>Grit Builders | Premium Design-Build Construction</title>
+    <meta name="description" content="GRIT Builders - Portland's trusted kitchen and bathroom remodeling contractor. See our work, read reviews, and schedule a free consultation.">
+    <title>Portland Kitchen & Bathroom Remodeling | GRIT Builders</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,9 +20,20 @@
             </a>
             <ul class="nav__menu" id="navMenu">
                 <li><a href="index.html" class="nav__link active">Home</a></li>
+                <li class="nav__dropdown">
+                    <a href="services.html" class="nav__link">Services <span class="nav__arrow">&#9662;</span></a>
+                    <ul class="nav__dropdown-menu">
+                        <li><a href="services-kitchen.html">Kitchen Remodeling</a></li>
+                        <li><a href="services-bathroom.html">Bathroom Remodeling</a></li>
+                        <li><a href="services-additions.html">Home Additions</a></li>
+                        <li><a href="services-whole-home.html">Whole-Home Remodeling</a></li>
+                    </ul>
+                </li>
+                <li><a href="projects.html" class="nav__link">Projects</a></li>
+                <li><a href="process.html" class="nav__link">Our Process</a></li>
                 <li><a href="about.html" class="nav__link">About</a></li>
                 <li><a href="contact.html" class="nav__link">Contact</a></li>
-                <li><a href="contact.html" class="nav__link nav__cta">Get a Quote</a></li>
+                <li><a href="contact.html" class="nav__link nav__cta">Schedule Consultation</a></li>
             </ul>
             <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu">
                 <span class="hamburger"></span>
@@ -34,117 +45,222 @@
     <section class="hero">
         <div class="hero__overlay"></div>
         <div class="hero__content container">
-            <p class="hero__subtitle">Premium Design-Build Construction</p>
-            <h1 class="hero__title">Building Excellence<br>With Integrity</h1>
-            <p class="hero__description">We bring together design and craftsmanship under one roof, delivering exceptional remodels, custom homes, and renovations that stand the test of time.</p>
+            <p class="hero__subtitle">Trusted Portland Remodeling Contractor</p>
+            <h1 class="hero__title">Portland Kitchen &<br>Bathroom Remodeling</h1>
+            <p class="hero__description">Beautiful spaces designed and built with craftsmanship. From kitchens to whole-home transformations, we deliver remodels Portland homeowners love.</p>
             <div class="hero__buttons">
-                <a href="contact.html" class="btn btn--primary">Start Your Project</a>
-                <a href="about.html" class="btn btn--outline">Learn More</a>
+                <a href="contact.html" class="btn btn--primary btn--large">Schedule Consultation</a>
+                <a href="projects.html" class="btn btn--outline btn--large">View Our Projects</a>
+            </div>
+            <div class="hero__trust-bar">
+                <div class="hero__trust-item">
+                    <span class="hero__trust-number">25+</span>
+                    <span class="hero__trust-label">Years Experience</span>
+                </div>
+                <div class="hero__trust-divider"></div>
+                <div class="hero__trust-item">
+                    <span class="hero__trust-number">500+</span>
+                    <span class="hero__trust-label">Projects Completed</span>
+                </div>
+                <div class="hero__trust-divider"></div>
+                <div class="hero__trust-item">
+                    <span class="hero__trust-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="hero__trust-label">4.9 Google Rating</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Intro Section -->
-    <section class="intro section">
+    <!-- Featured Projects Section -->
+    <section class="featured-projects section">
         <div class="container">
-            <div class="intro__grid">
-                <div class="intro__content">
-                    <p class="section__subtitle">Welcome to Grit Builders</p>
-                    <h2 class="section__title">Elevating the Art of the Home</h2>
-                    <p class="intro__text">At Grit Builders, our award-winning design-build team has perfected the construction process. We bring everyone together from the start to ensure every question is answered, every detail is considered, and every project is delivered on time and on budget.</p>
-                    <p class="intro__text">Whether it's a kitchen transformation, a luxury bathroom remodel, or a custom-built dream home, we treat every project with the same dedication to excellence.</p>
-                    <a href="about.html" class="btn btn--secondary">Our Story</a>
-                </div>
-                <div class="intro__image">
-                    <div class="intro__image-placeholder">
-                        <div class="placeholder__icon">&#9678;</div>
-                        <span>Quality Craftsmanship</span>
+            <p class="section__subtitle">Our Work</p>
+            <h2 class="section__title">Featured Projects</h2>
+            <p class="section__description">See the craftsmanship that sets us apart. Every project tells a story of collaboration, quality materials, and expert execution.</p>
+            <div class="projects-grid">
+                <a href="project-pearl-kitchen.html" class="project-card project-card--featured">
+                    <div class="project-card__image">
+                        <div class="project-card__image-placeholder">
+                            <div class="placeholder__icon">&#9878;</div>
+                            <span>Kitchen Remodel</span>
+                        </div>
+                        <div class="project-card__overlay">
+                            <span class="project-card__view">View Project</span>
+                        </div>
                     </div>
-                </div>
+                    <div class="project-card__info">
+                        <span class="project-card__type">Kitchen Remodel</span>
+                        <h3 class="project-card__title">Pearl District Modern Kitchen</h3>
+                        <p class="project-card__location">Portland, OR</p>
+                    </div>
+                </a>
+                <a href="project-hawthorne-bathroom.html" class="project-card">
+                    <div class="project-card__image">
+                        <div class="project-card__image-placeholder">
+                            <div class="placeholder__icon">&#9878;</div>
+                            <span>Bathroom Remodel</span>
+                        </div>
+                        <div class="project-card__overlay">
+                            <span class="project-card__view">View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__type">Bathroom Remodel</span>
+                        <h3 class="project-card__title">Hawthorne Spa Bathroom</h3>
+                        <p class="project-card__location">Portland, OR</p>
+                    </div>
+                </a>
+                <a href="project-alberta-whole-home.html" class="project-card">
+                    <div class="project-card__image">
+                        <div class="project-card__image-placeholder">
+                            <div class="placeholder__icon">&#9878;</div>
+                            <span>Whole-Home Remodel</span>
+                        </div>
+                        <div class="project-card__overlay">
+                            <span class="project-card__view">View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__type">Whole-Home Remodel</span>
+                        <h3 class="project-card__title">Alberta Arts Craftsman Revival</h3>
+                        <p class="project-card__location">Portland, OR</p>
+                    </div>
+                </a>
+            </div>
+            <div class="section__cta">
+                <a href="projects.html" class="btn btn--secondary">View All Projects</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Overview Section -->
     <section class="services section section--dark">
         <div class="container">
             <p class="section__subtitle section__subtitle--light">What We Do</p>
-            <h2 class="section__title section__title--light">Our Services</h2>
+            <h2 class="section__title section__title--light">Our Remodeling Services</h2>
             <div class="services__grid">
-                <div class="service-card">
+                <a href="services-kitchen.html" class="service-card">
                     <div class="service-card__icon">
                         <svg viewBox="0 0 64 64" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2">
                             <rect x="8" y="20" width="48" height="36" rx="2"/>
-                            <polyline points="8,28 32,8 56,28"/>
-                            <rect x="24" y="38" width="16" height="18"/>
+                            <line x1="8" y1="36" x2="56" y2="36"/>
+                            <rect x="16" y="42" width="12" height="8" rx="1"/>
+                            <rect x="36" y="42" width="12" height="8" rx="1"/>
+                            <line x1="20" y1="20" x2="20" y2="12"/>
+                            <line x1="32" y1="20" x2="32" y2="14"/>
+                            <line x1="44" y1="20" x2="44" y2="12"/>
                         </svg>
                     </div>
-                    <h3 class="service-card__title">Custom Homes</h3>
-                    <p class="service-card__text">From concept to keys, we build custom homes that reflect your lifestyle and exceed your expectations.</p>
-                </div>
-                <div class="service-card">
+                    <h3 class="service-card__title">Kitchen Remodeling</h3>
+                    <p class="service-card__text">Custom cabinetry, countertops, lighting, layout redesign, and full kitchen transformations.</p>
+                    <span class="service-card__link">Learn More &rarr;</span>
+                </a>
+                <a href="services-bathroom.html" class="service-card">
                     <div class="service-card__icon">
                         <svg viewBox="0 0 64 64" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="4" y="12" width="56" height="44" rx="2"/>
-                            <line x1="4" y1="28" x2="60" y2="28"/>
-                            <rect x="12" y="36" width="16" height="12" rx="1"/>
-                            <line x1="36" y1="36" x2="52" y2="36"/>
-                            <line x1="36" y1="44" x2="52" y2="44"/>
+                            <path d="M8 32 h48 v4 a8 8 0 01-8 8 H16 a8 8 0 01-8-8 v-4z"/>
+                            <line x1="12" y1="32" x2="12" y2="12"/>
+                            <path d="M12 12 h8 a4 4 0 014 4 v16"/>
+                            <circle cx="20" cy="52" r="2"/>
+                            <circle cx="44" cy="52" r="2"/>
                         </svg>
                     </div>
-                    <h3 class="service-card__title">Remodeling</h3>
-                    <p class="service-card__text">Transform your kitchen, bathroom, or entire living space with our expert remodeling services.</p>
-                </div>
-                <div class="service-card">
+                    <h3 class="service-card__title">Bathroom Remodeling</h3>
+                    <p class="service-card__text">Walk-in showers, soaking tubs, vanities, tile work, and spa-inspired bathroom designs.</p>
+                    <span class="service-card__link">Learn More &rarr;</span>
+                </a>
+                <a href="services-additions.html" class="service-card">
                     <div class="service-card__icon">
                         <svg viewBox="0 0 64 64" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2">
                             <rect x="8" y="20" width="28" height="36" rx="2"/>
                             <polyline points="8,28 22,12 36,28"/>
                             <rect x="28" y="30" width="28" height="26" rx="2"/>
                             <polyline points="28,36 42,24 56,36"/>
+                            <line x1="42" y1="40" x2="42" y2="48"/>
+                            <line x1="38" y1="44" x2="46" y2="44"/>
                         </svg>
                     </div>
-                    <h3 class="service-card__title">Additions</h3>
-                    <p class="service-card__text">Expand your home seamlessly with additions that blend flawlessly with your existing structure.</p>
-                </div>
-                <div class="service-card">
+                    <h3 class="service-card__title">Home Additions</h3>
+                    <p class="service-card__text">Seamless room additions, second stories, and expanded living spaces that match your home.</p>
+                    <span class="service-card__link">Learn More &rarr;</span>
+                </a>
+                <a href="services-whole-home.html" class="service-card">
                     <div class="service-card__icon">
                         <svg viewBox="0 0 64 64" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="32" cy="32" r="24"/>
-                            <path d="M32 16 L32 32 L44 38"/>
-                            <circle cx="32" cy="32" r="3" fill="currentColor"/>
+                            <rect x="8" y="24" width="48" height="32" rx="2"/>
+                            <polyline points="8,32 32,10 56,32"/>
+                            <rect x="24" y="40" width="16" height="16"/>
+                            <line x1="32" y1="40" x2="32" y2="56"/>
                         </svg>
                     </div>
-                    <h3 class="service-card__title">Design Studio</h3>
-                    <p class="service-card__text">Visit our design studio to explore materials, finishes, and furnishing options for your project.</p>
-                </div>
+                    <h3 class="service-card__title">Whole-Home Remodeling</h3>
+                    <p class="service-card__text">Complete home transformations that reimagine your entire living space from top to bottom.</p>
+                    <span class="service-card__link">Learn More &rarr;</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats section">
+    <!-- Trust / Why Choose Us Section -->
+    <section class="trust section">
         <div class="container">
-            <div class="stats__grid">
-                <div class="stat">
-                    <span class="stat__number" data-target="25">0</span>
-                    <span class="stat__suffix">+</span>
-                    <p class="stat__label">Years of Experience</p>
+            <p class="section__subtitle">Why Choose Us</p>
+            <h2 class="section__title">Trusted Remodeling in Portland</h2>
+            <div class="trust__grid">
+                <div class="trust__content">
+                    <div class="trust-item">
+                        <div class="trust-item__icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <polyline points="9 12 11 14 15 10"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="trust-item__title">Licensed & Insured</h3>
+                            <p class="trust-item__text">Fully licensed Oregon contractor (CCB #123456) with comprehensive liability and workers' compensation insurance.</p>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-item__icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="trust-item__title">25+ Years in Business</h3>
+                            <p class="trust-item__text">Serving Portland homeowners since 2001 with consistent quality and reliability on every project.</p>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-item__icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="trust-item__title">4.9-Star Google Rating</h3>
+                            <p class="trust-item__text">Over 200 five-star reviews from satisfied Portland homeowners who trusted us with their remodels.</p>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-item__icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="trust-item__title">Portland Metro Area</h3>
+                            <p class="trust-item__text">Proudly serving Portland, Lake Oswego, West Linn, Tigard, Beaverton, and surrounding communities.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="stat">
-                    <span class="stat__number" data-target="500">0</span>
-                    <span class="stat__suffix">+</span>
-                    <p class="stat__label">Projects Completed</p>
-                </div>
-                <div class="stat">
-                    <span class="stat__number" data-target="100">0</span>
-                    <span class="stat__suffix">%</span>
-                    <p class="stat__label">Client Satisfaction</p>
-                </div>
-                <div class="stat">
-                    <span class="stat__number" data-target="35">0</span>
-                    <span class="stat__suffix">+</span>
-                    <p class="stat__label">Team Members</p>
+                <div class="trust__image">
+                    <div class="trust__image-placeholder">
+                        <div class="placeholder__icon">&#9670;</div>
+                        <span>Quality Craftsmanship</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -153,48 +269,126 @@
     <!-- Testimonials Section -->
     <section class="testimonials section section--accent">
         <div class="container">
-            <p class="section__subtitle">Client Stories</p>
-            <h2 class="section__title">What Our Clients Say</h2>
+            <p class="section__subtitle">Client Reviews</p>
+            <h2 class="section__title">What Portland Homeowners Say</h2>
             <div class="testimonials__grid">
                 <div class="testimonial-card">
                     <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <blockquote class="testimonial-card__quote">
-                        "Grit Builders has been our builder of choice for years. The quality of their work and their services are the best in our area. We wouldn't trust anyone else with our home."
+                        "GRIT Builders transformed our kitchen. The project stayed on schedule and the communication was excellent. We couldn't be happier with the result."
                     </blockquote>
                     <div class="testimonial-card__author">
                         <div class="testimonial-card__avatar">MJ</div>
                         <div>
-                            <p class="testimonial-card__name">Michael Johnson</p>
-                            <p class="testimonial-card__role">Homeowner</p>
+                            <p class="testimonial-card__name">Michael & Sarah Johnson</p>
+                            <p class="testimonial-card__role">Kitchen Remodel — Pearl District</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <blockquote class="testimonial-card__quote">
-                        "From the initial design consultation to the final walkthrough, the team at Grit Builders made the entire process seamless. Our new kitchen is absolutely stunning."
+                        "From the initial design consultation to the final walkthrough, the team at GRIT made the entire process seamless. Our master bathroom is absolutely stunning."
                     </blockquote>
                     <div class="testimonial-card__author">
                         <div class="testimonial-card__avatar">SR</div>
                         <div>
                             <p class="testimonial-card__name">Sarah Reynolds</p>
-                            <p class="testimonial-card__role">Kitchen Remodel Client</p>
+                            <p class="testimonial-card__role">Bathroom Remodel — Hawthorne</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <blockquote class="testimonial-card__quote">
-                        "We hired Grit Builders for a full home addition and they exceeded every expectation. It looks like it was always part of the original home. True craftsmen."
+                        "We hired GRIT Builders for a full home addition and they exceeded every expectation. The new space looks like it was always part of the original home."
                     </blockquote>
                     <div class="testimonial-card__author">
                         <div class="testimonial-card__avatar">DW</div>
                         <div>
                             <p class="testimonial-card__name">David & Karen Wells</p>
-                            <p class="testimonial-card__role">Addition Project</p>
+                            <p class="testimonial-card__role">Home Addition — Alberta Arts</p>
                         </div>
                     </div>
                 </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonial-card__quote">
+                        "GRIT remodeled our entire first floor. They were transparent about costs, meticulous about details, and genuinely cared about our satisfaction."
+                    </blockquote>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">LP</div>
+                        <div>
+                            <p class="testimonial-card__name">Lisa & Tom Patterson</p>
+                            <p class="testimonial-card__role">Whole-Home Remodel — Lake Oswego</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonial-card__quote">
+                        "Professional from start to finish. The crew was respectful of our home, cleaned up daily, and delivered a kitchen that's even better than we imagined."
+                    </blockquote>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">RH</div>
+                        <div>
+                            <p class="testimonial-card__name">Rachel Hernandez</p>
+                            <p class="testimonial-card__role">Kitchen Remodel — Sellwood</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <blockquote class="testimonial-card__quote">
+                        "Best contractor experience we've ever had. GRIT's design team helped us reimagine our bathroom and the construction team brought it to life beautifully."
+                    </blockquote>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">JN</div>
+                        <div>
+                            <p class="testimonial-card__name">James & Nancy Oakley</p>
+                            <p class="testimonial-card__role">Bathroom Remodel — West Linn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Preview Section -->
+    <section class="process-preview section">
+        <div class="container">
+            <p class="section__subtitle">How We Work</p>
+            <h2 class="section__title">Our Remodeling Process</h2>
+            <p class="section__description">A proven 5-step process that keeps your project on time, on budget, and stress-free.</p>
+            <div class="process__grid">
+                <div class="process-step">
+                    <div class="process-step__number">1</div>
+                    <h3 class="process-step__title">Consultation</h3>
+                    <p class="process-step__text">Discuss your goals, scope, and budget in a free in-home consultation.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step__number">2</div>
+                    <h3 class="process-step__title">Design & Planning</h3>
+                    <p class="process-step__text">Layouts, material selections, and detailed project planning.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step__number">3</div>
+                    <h3 class="process-step__title">Project Proposal</h3>
+                    <p class="process-step__text">Detailed estimate, clear timeline, and transparent pricing.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step__number">4</div>
+                    <h3 class="process-step__title">Construction</h3>
+                    <p class="process-step__text">Professional build with daily updates and consistent communication.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step__number">5</div>
+                    <h3 class="process-step__title">Final Walkthrough</h3>
+                    <p class="process-step__text">Thorough inspection and project completion to your satisfaction.</p>
+                </div>
+            </div>
+            <div class="section__cta">
+                <a href="process.html" class="btn btn--secondary">Learn More About Our Process</a>
             </div>
         </div>
     </section>
@@ -203,9 +397,12 @@
     <section class="cta section">
         <div class="cta__overlay"></div>
         <div class="container cta__content">
-            <h2 class="cta__title">Ready to Build Your Dream?</h2>
-            <p class="cta__text">Let's start a conversation about your next project. Our design-build team is ready to bring your vision to life.</p>
-            <a href="contact.html" class="btn btn--primary btn--large">Get Your Free Consultation</a>
+            <h2 class="cta__title">Ready to Start Your Remodel?</h2>
+            <p class="cta__text">Schedule a free consultation and let's discuss how we can transform your home.</p>
+            <div class="cta__buttons">
+                <a href="contact.html" class="btn btn--primary btn--large">Schedule Consultation</a>
+                <a href="tel:+15551234567" class="btn btn--outline btn--large">Call (555) 123-4567</a>
+            </div>
         </div>
     </section>
 
@@ -218,35 +415,38 @@
                         <span class="logo__grit">GRIT</span>
                         <span class="logo__builders">BUILDERS</span>
                     </a>
-                    <p class="footer__tagline">Building Excellence With Integrity</p>
-                    <p class="footer__description">Premium design-build construction, remodeling, and custom homes. Serving our community with craftsmanship and dedication.</p>
-                </div>
-                <div class="footer__links">
-                    <h4 class="footer__heading">Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                    <p class="footer__tagline">Trusted Remodeling in Portland</p>
+                    <p class="footer__description">Licensed Oregon contractor specializing in kitchen remodeling, bathroom remodeling, home additions, and whole-home renovations.</p>
+                    <p class="footer__license">CCB #123456 | Licensed &amp; Insured</p>
                 </div>
                 <div class="footer__links">
                     <h4 class="footer__heading">Services</h4>
                     <ul>
-                        <li><a href="#">Custom Homes</a></li>
-                        <li><a href="#">Remodeling</a></li>
-                        <li><a href="#">Additions</a></li>
-                        <li><a href="#">Design Studio</a></li>
+                        <li><a href="services-kitchen.html">Kitchen Remodeling</a></li>
+                        <li><a href="services-bathroom.html">Bathroom Remodeling</a></li>
+                        <li><a href="services-additions.html">Home Additions</a></li>
+                        <li><a href="services-whole-home.html">Whole-Home Remodeling</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__heading">Company</h4>
+                    <ul>
+                        <li><a href="projects.html">Our Projects</a></li>
+                        <li><a href="process.html">Our Process</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer__contact">
                     <h4 class="footer__heading">Get In Touch</h4>
-                    <p>123 Builder's Way<br>Your City, ST 00000</p>
+                    <p>Portland, OR Metro Area</p>
                     <p><a href="tel:+15551234567">(555) 123-4567</a></p>
                     <p><a href="mailto:info@gritbuilders.net">info@gritbuilders.net</a></p>
+                    <a href="contact.html" class="btn btn--primary btn--small footer__cta-btn">Free Consultation</a>
                 </div>
             </div>
             <div class="footer__bottom">
-                <p>&copy; 2026 Grit Builders. All rights reserved.</p>
+                <p>&copy; 2026 GRIT Builders. All rights reserved. Serving Portland, Lake Oswego, West Linn, Tigard, Beaverton &amp; surrounding areas.</p>
             </div>
         </div>
     </footer>
