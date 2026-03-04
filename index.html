@@ -20,18 +20,9 @@
             </a>
             <ul class="nav__menu" id="navMenu">
                 <li><a href="index.html" class="nav__link active">Home</a></li>
-                <li class="nav__dropdown">
-                    <a href="services.html" class="nav__link">Services <span class="nav__arrow">&#9662;</span></a>
-                    <ul class="nav__dropdown-menu">
-                        <li><a href="services-kitchen.html">Kitchen Remodeling</a></li>
-                        <li><a href="services-bathroom.html">Bathroom Remodeling</a></li>
-                        <li><a href="services-additions.html">Home Additions</a></li>
-                        <li><a href="services-whole-home.html">Whole-Home Remodeling</a></li>
-                    </ul>
-                </li>
                 <li><a href="projects.html" class="nav__link">Projects</a></li>
-                <li><a href="process.html" class="nav__link">Our Process</a></li>
-                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="services.html" class="nav__link">Services</a></li>
+                <li><a href="process.html" class="nav__link">Process</a></li>
                 <li><a href="contact.html" class="nav__link">Contact</a></li>
                 <li><a href="contact.html" class="nav__link nav__cta">Schedule Consultation</a></li>
             </ul>
@@ -41,13 +32,19 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Hero Section — Project Photo Background -->
+    <section class="hero hero--photo">
+        <div class="hero__photo-bg">
+            <!-- Replace with actual project hero photo -->
+            <div class="hero__photo-placeholder">
+                <span>HERO PROJECT PHOTO — Replace with your best kitchen or bathroom remodel photo (1920x1080 minimum)</span>
+            </div>
+        </div>
         <div class="hero__overlay"></div>
         <div class="hero__content container">
             <p class="hero__subtitle">Trusted Portland Remodeling Contractor</p>
             <h1 class="hero__title">Portland Kitchen &<br>Bathroom Remodeling</h1>
-            <p class="hero__description">Beautiful spaces designed and built with craftsmanship. From kitchens to whole-home transformations, we deliver remodels Portland homeowners love.</p>
+            <p class="hero__description">Beautiful spaces designed and built with craftsmanship. See our work and schedule a free consultation.</p>
             <div class="hero__buttons">
                 <a href="contact.html" class="btn btn--primary btn--large">Schedule Consultation</a>
                 <a href="projects.html" class="btn btn--outline btn--large">View Our Projects</a>
@@ -71,64 +68,141 @@
         </div>
     </section>
 
-    <!-- Featured Projects Section -->
-    <section class="featured-projects section">
+    <!-- PORTFOLIO SHOWCASE — Most Prominent Section -->
+    <section class="portfolio-showcase section">
         <div class="container">
-            <p class="section__subtitle">Our Work</p>
-            <h2 class="section__title">Featured Projects</h2>
-            <p class="section__description">See the craftsmanship that sets us apart. Every project tells a story of collaboration, quality materials, and expert execution.</p>
-            <div class="projects-grid">
-                <a href="project-pearl-kitchen.html" class="project-card project-card--featured">
-                    <div class="project-card__image">
-                        <div class="project-card__image-placeholder">
-                            <div class="placeholder__icon">&#9878;</div>
-                            <span>Kitchen Remodel</span>
-                        </div>
-                        <div class="project-card__overlay">
-                            <span class="project-card__view">View Project</span>
+            <p class="section__subtitle">Our Work Speaks for Itself</p>
+            <h2 class="section__title">Recent Projects</h2>
+
+            <!-- Hero Project — Full Width -->
+            <a href="project-pearl-kitchen.html" class="showcase-hero">
+                <div class="showcase-hero__image">
+                    <div class="showcase-hero__placeholder">
+                        <span>LARGE PROJECT PHOTO — Pearl District Kitchen (replace with real photo, 1200x600 minimum)</span>
+                    </div>
+                    <div class="showcase-hero__overlay">
+                        <div class="showcase-hero__content">
+                            <span class="showcase-hero__type">Kitchen Remodel</span>
+                            <h3 class="showcase-hero__title">Pearl District Modern Kitchen</h3>
+                            <p class="showcase-hero__desc">Open-concept layout with custom walnut cabinetry, quartz waterfall island, and integrated appliances.</p>
+                            <span class="showcase-hero__link">View Full Project &rarr;</span>
                         </div>
                     </div>
-                    <div class="project-card__info">
-                        <span class="project-card__type">Kitchen Remodel</span>
-                        <h3 class="project-card__title">Pearl District Modern Kitchen</h3>
-                        <p class="project-card__location">Portland, OR</p>
+                </div>
+            </a>
+
+            <!-- Project Grid — Large Cards -->
+            <div class="showcase-grid">
+                <a href="project-hawthorne-bathroom.html" class="showcase-card">
+                    <div class="showcase-card__image">
+                        <div class="showcase-card__placeholder">
+                            <span>PROJECT PHOTO — Hawthorne Bathroom</span>
+                        </div>
+                        <div class="showcase-card__overlay">
+                            <span class="showcase-card__view">View Project</span>
+                        </div>
+                    </div>
+                    <div class="showcase-card__info">
+                        <span class="showcase-card__type">Bathroom Remodel</span>
+                        <h3 class="showcase-card__title">Hawthorne Spa Bathroom</h3>
+                        <p class="showcase-card__location">Portland, OR</p>
                     </div>
                 </a>
-                <a href="project-hawthorne-bathroom.html" class="project-card">
-                    <div class="project-card__image">
-                        <div class="project-card__image-placeholder">
-                            <div class="placeholder__icon">&#9878;</div>
-                            <span>Bathroom Remodel</span>
+                <a href="project-alberta-whole-home.html" class="showcase-card">
+                    <div class="showcase-card__image">
+                        <div class="showcase-card__placeholder">
+                            <span>PROJECT PHOTO — Alberta Craftsman</span>
                         </div>
-                        <div class="project-card__overlay">
-                            <span class="project-card__view">View Project</span>
+                        <div class="showcase-card__overlay">
+                            <span class="showcase-card__view">View Project</span>
                         </div>
                     </div>
-                    <div class="project-card__info">
-                        <span class="project-card__type">Bathroom Remodel</span>
-                        <h3 class="project-card__title">Hawthorne Spa Bathroom</h3>
-                        <p class="project-card__location">Portland, OR</p>
+                    <div class="showcase-card__info">
+                        <span class="showcase-card__type">Whole-Home Remodel</span>
+                        <h3 class="showcase-card__title">Alberta Arts Craftsman Revival</h3>
+                        <p class="showcase-card__location">Portland, OR</p>
                     </div>
                 </a>
-                <a href="project-alberta-whole-home.html" class="project-card">
-                    <div class="project-card__image">
-                        <div class="project-card__image-placeholder">
-                            <div class="placeholder__icon">&#9878;</div>
-                            <span>Whole-Home Remodel</span>
+                <a href="project-sellwood-kitchen.html" class="showcase-card">
+                    <div class="showcase-card__image">
+                        <div class="showcase-card__placeholder">
+                            <span>PROJECT PHOTO — Sellwood Kitchen</span>
                         </div>
-                        <div class="project-card__overlay">
-                            <span class="project-card__view">View Project</span>
+                        <div class="showcase-card__overlay">
+                            <span class="showcase-card__view">View Project</span>
                         </div>
                     </div>
-                    <div class="project-card__info">
-                        <span class="project-card__type">Whole-Home Remodel</span>
-                        <h3 class="project-card__title">Alberta Arts Craftsman Revival</h3>
-                        <p class="project-card__location">Portland, OR</p>
+                    <div class="showcase-card__info">
+                        <span class="showcase-card__type">Kitchen Remodel</span>
+                        <h3 class="showcase-card__title">Sellwood Farmhouse Kitchen</h3>
+                        <p class="showcase-card__location">Portland, OR</p>
+                    </div>
+                </a>
+                <a href="project-west-linn-bathroom.html" class="showcase-card">
+                    <div class="showcase-card__image">
+                        <div class="showcase-card__placeholder">
+                            <span>PROJECT PHOTO — West Linn Bath</span>
+                        </div>
+                        <div class="showcase-card__overlay">
+                            <span class="showcase-card__view">View Project</span>
+                        </div>
+                    </div>
+                    <div class="showcase-card__info">
+                        <span class="showcase-card__type">Bathroom Remodel</span>
+                        <h3 class="showcase-card__title">West Linn Master Bath Suite</h3>
+                        <p class="showcase-card__location">West Linn, OR</p>
+                    </div>
+                </a>
+                <a href="project-nw-addition.html" class="showcase-card">
+                    <div class="showcase-card__image">
+                        <div class="showcase-card__placeholder">
+                            <span>PROJECT PHOTO — NW Addition</span>
+                        </div>
+                        <div class="showcase-card__overlay">
+                            <span class="showcase-card__view">View Project</span>
+                        </div>
+                    </div>
+                    <div class="showcase-card__info">
+                        <span class="showcase-card__type">Home Addition</span>
+                        <h3 class="showcase-card__title">NW Portland Second Story</h3>
+                        <p class="showcase-card__location">Portland, OR</p>
+                    </div>
+                </a>
+                <a href="project-tigard-whole-home.html" class="showcase-card">
+                    <div class="showcase-card__image">
+                        <div class="showcase-card__placeholder">
+                            <span>PROJECT PHOTO — Tigard Ranch</span>
+                        </div>
+                        <div class="showcase-card__overlay">
+                            <span class="showcase-card__view">View Project</span>
+                        </div>
+                    </div>
+                    <div class="showcase-card__info">
+                        <span class="showcase-card__type">Whole-Home Remodel</span>
+                        <h3 class="showcase-card__title">Tigard Ranch Modernization</h3>
+                        <p class="showcase-card__location">Tigard, OR</p>
                     </div>
                 </a>
             </div>
+
             <div class="section__cta">
-                <a href="projects.html" class="btn btn--secondary">View All Projects</a>
+                <a href="projects.html" class="btn btn--primary btn--large">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid-page CTA -->
+    <section class="cta-inline">
+        <div class="container">
+            <div class="cta-inline__content">
+                <div>
+                    <h2 class="cta-inline__title">Like what you see?</h2>
+                    <p class="cta-inline__text">Schedule a free consultation and let's talk about your project.</p>
+                </div>
+                <div class="cta-inline__buttons">
+                    <a href="contact.html" class="btn btn--primary">Schedule Consultation</a>
+                    <a href="tel:+15551234567" class="btn btn--secondary">Call (555) 123-4567</a>
+                </div>
             </div>
         </div>
     </section>
@@ -308,45 +382,6 @@
                         <div>
                             <p class="testimonial-card__name">David & Karen Wells</p>
                             <p class="testimonial-card__role">Home Addition — Alberta Arts</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <blockquote class="testimonial-card__quote">
-                        "GRIT remodeled our entire first floor. They were transparent about costs, meticulous about details, and genuinely cared about our satisfaction."
-                    </blockquote>
-                    <div class="testimonial-card__author">
-                        <div class="testimonial-card__avatar">LP</div>
-                        <div>
-                            <p class="testimonial-card__name">Lisa & Tom Patterson</p>
-                            <p class="testimonial-card__role">Whole-Home Remodel — Lake Oswego</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <blockquote class="testimonial-card__quote">
-                        "Professional from start to finish. The crew was respectful of our home, cleaned up daily, and delivered a kitchen that's even better than we imagined."
-                    </blockquote>
-                    <div class="testimonial-card__author">
-                        <div class="testimonial-card__avatar">RH</div>
-                        <div>
-                            <p class="testimonial-card__name">Rachel Hernandez</p>
-                            <p class="testimonial-card__role">Kitchen Remodel — Sellwood</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <blockquote class="testimonial-card__quote">
-                        "Best contractor experience we've ever had. GRIT's design team helped us reimagine our bathroom and the construction team brought it to life beautifully."
-                    </blockquote>
-                    <div class="testimonial-card__author">
-                        <div class="testimonial-card__avatar">JN</div>
-                        <div>
-                            <p class="testimonial-card__name">James & Nancy Oakley</p>
-                            <p class="testimonial-card__role">Bathroom Remodel — West Linn</p>
                         </div>
                     </div>
                 </div>

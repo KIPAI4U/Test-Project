@@ -62,7 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
         '.service-card', '.testimonial-card', '.stat', '.value-card',
         '.process-step', '.team-card', '.contact-info-card',
         '.project-card', '.trust-item', '.about-trust__card',
-        '.process-detail__step', '.feature-item', '.credibility-bar__item'
+        '.process-detail__step', '.feature-item', '.credibility-bar__item',
+        '.showcase-card', '.service-landing-card'
     ];
     const fadeElements = document.querySelectorAll(fadeSelectors.join(', '));
 
