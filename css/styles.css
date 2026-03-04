@@ -1436,8 +1436,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer__grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1.5fr;
-    gap: 3rem;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+    gap: 2.5rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid rgba(255,255,255,0.08);
 }
@@ -1751,6 +1751,431 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
+   TRUST BAR (Below hero)
+   ============================================ */
+.trust-bar-section {
+    background: var(--color-primary);
+    padding: 1.25rem 0;
+    border-bottom: 3px solid var(--color-accent);
+}
+.trust-bar__grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.trust-bar__item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: rgba(255,255,255,0.9);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.trust-bar__item svg {
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+/* ============================================
+   FEATURED PROJECTS (Homepage — 3 large cards)
+   ============================================ */
+.featured-projects .section__subtitle,
+.featured-projects .section__title,
+.featured-projects .section__description {
+    text-align: center;
+}
+.featured-projects__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.featured-card {
+    display: block;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--color-white);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+}
+.featured-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-6px);
+}
+.featured-card__image {
+    position: relative;
+    overflow: hidden;
+}
+.featured-card__placeholder {
+    aspect-ratio: 3/2;
+    background: linear-gradient(135deg, #e8e4dc 0%, #d0ccc4 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-muted);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem;
+}
+.featured-card__overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(26,26,46,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+.featured-card:hover .featured-card__overlay { opacity: 1; }
+.featured-card__view {
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.7rem 1.8rem;
+    border: 2px solid var(--color-white);
+    border-radius: var(--radius-sm);
+}
+.featured-card__info {
+    padding: 1.5rem 1.75rem;
+}
+.featured-card__type {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-accent);
+}
+.featured-card__title {
+    font-size: 1.2rem;
+    margin: 0.4rem 0 0.3rem;
+    color: var(--color-primary);
+}
+.featured-card__location {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.75rem;
+}
+.featured-card__link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    transition: color var(--transition-fast);
+}
+.featured-card:hover .featured-card__link {
+    color: var(--color-accent-hover);
+}
+
+/* ============================================
+   GOOGLE REVIEWS SECTION
+   ============================================ */
+.google-reviews .section__subtitle,
+.google-reviews .section__title {
+    text-align: center;
+}
+.google-reviews__header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.google-reviews__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.25rem;
+    background: var(--color-white);
+    padding: 1.25rem 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border-left: 4px solid var(--color-accent);
+}
+.google-reviews__score {
+    text-align: center;
+}
+.google-reviews__number {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+}
+.google-reviews__stars {
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-top: 0.25rem;
+}
+.google-reviews__meta {
+    text-align: left;
+}
+.google-reviews__source {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+.google-reviews__count {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+.google-reviews__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.review-card {
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    border-left: 3px solid var(--color-accent);
+    transition: all var(--transition-base);
+}
+.review-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+.review-card__stars {
+    color: var(--color-accent);
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+.review-card__quote {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--color-text-light);
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+}
+.review-card__author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.review-card__avatar {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+.review-card__name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-primary);
+}
+.review-card__location {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+.review-card__posted {
+    font-size: 0.75rem;
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+/* ============================================
+   SERVICE AREAS SECTION (Homepage)
+   ============================================ */
+.service-areas .section__subtitle,
+.service-areas .section__title,
+.service-areas .section__description {
+    text-align: center;
+}
+.service-areas__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+}
+.service-area-card {
+    display: block;
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+    border-bottom: 3px solid transparent;
+}
+.service-area-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+    border-bottom-color: var(--color-accent);
+}
+.service-area-card h3 {
+    font-size: 1.05rem;
+    color: var(--color-primary);
+    margin-bottom: 0.4rem;
+}
+.service-area-card p {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+.service-area-card__link {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-accent);
+}
+
+/* ============================================
+   BLOG / RESOURCES SECTION
+   ============================================ */
+.blog-preview .section__subtitle,
+.blog-preview .section__title {
+    text-align: center;
+}
+.blog-preview__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.blog-card {
+    display: block;
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+.blog-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+.blog-card__image {
+    overflow: hidden;
+}
+.blog-card__placeholder {
+    aspect-ratio: 16/9;
+    background: linear-gradient(135deg, #e8e4dc 0%, #d0ccc4 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+}
+.blog-card__content {
+    padding: 1.5rem;
+}
+.blog-card__category {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-accent);
+}
+.blog-card__title {
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    margin: 0.4rem 0 0.75rem;
+    line-height: 1.4;
+}
+.blog-card__excerpt {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+}
+.blog-card__link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-accent);
+}
+
+/* Blog grid page */
+.blog-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.blog-card--horizontal {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    border-radius: var(--radius-lg);
+}
+.blog-card--horizontal .blog-card__placeholder {
+    aspect-ratio: auto;
+    height: 100%;
+    min-height: 220px;
+}
+.blog-card--horizontal .blog-card__content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.blog-card--horizontal .blog-card__title {
+    font-size: 1.3rem;
+}
+
+/* ============================================
+   HERO PHONE NUMBER
+   ============================================ */
+.hero__phone {
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards 0.7s;
+}
+.hero__phone-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color var(--transition-fast);
+}
+.hero__phone-link:hover {
+    color: var(--color-white);
+}
+.hero__phone-link svg {
+    color: inherit;
+}
+
+/* ============================================
+   RELATED PROJECTS LINKS (Case study sidebar)
+   ============================================ */
+.project-detail__related {
+    list-style: none;
+    padding: 0;
+}
+.project-detail__related li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--color-border);
+}
+.project-detail__related li:last-child {
+    border: none;
+}
+.project-detail__related a {
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+.project-detail__related a:hover {
+    color: var(--color-accent-hover);
+}
+
+/* ============================================
+   FOOTER 5-COLUMN (updated for service areas)
+   ============================================ */
+.footer__grid--5col {
+    grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+}
+
+/* ============================================
    ANIMATIONS
    ============================================ */
 @keyframes fadeInUp {
@@ -1776,6 +2201,11 @@ h1, h2, h3, h4, h5, h6 {
     .projects-grid { grid-template-columns: repeat(2, 1fr); }
     .testimonials__grid { grid-template-columns: repeat(2, 1fr); }
     .showcase-grid { grid-template-columns: repeat(2, 1fr); }
+    .featured-projects__grid { grid-template-columns: repeat(2, 1fr); }
+    .google-reviews__grid { grid-template-columns: repeat(2, 1fr); }
+    .service-areas__grid { grid-template-columns: repeat(3, 1fr); }
+    .blog-preview__grid { grid-template-columns: repeat(2, 1fr); }
+    .blog-card--horizontal { grid-template-columns: 280px 1fr; }
     .services-landing__grid { grid-template-columns: 1fr; }
     .cta-inline__content { flex-direction: column; text-align: center; }
     .footer__grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
@@ -1837,6 +2267,13 @@ h1, h2, h3, h4, h5, h6 {
     .hero__buttons .btn { text-align: center; }
     .hero__trust-bar { flex-wrap: wrap; gap: 1.5rem; }
     .hero__trust-divider { display: none; }
+    .trust-bar__grid { gap: 1.5rem; }
+    .featured-projects__grid { grid-template-columns: 1fr; }
+    .google-reviews__grid { grid-template-columns: 1fr; }
+    .service-areas__grid { grid-template-columns: repeat(2, 1fr); }
+    .blog-preview__grid { grid-template-columns: 1fr; }
+    .blog-card--horizontal { grid-template-columns: 1fr; }
+    .blog-card--horizontal .blog-card__placeholder { min-height: 180px; aspect-ratio: 16/9; }
 
     .about-story__grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .services__grid { grid-template-columns: 1fr; }
