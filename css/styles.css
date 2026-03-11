@@ -1314,6 +1314,59 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
 }
 
+/* Meet Matt */
+.meet-matt__grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: start;
+}
+.meet-matt__photo-wrapper {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+.meet-matt__photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+.meet-matt__photo-caption {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-top: 1rem;
+}
+.meet-matt__content p {
+    color: var(--color-text-light);
+    margin-bottom: 1.25rem;
+    line-height: 1.8;
+}
+.meet-matt__content .section__title {
+    margin-bottom: 1.5rem;
+}
+
+/* What Drives Matt */
+.matt-drives__content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.matt-drives__content .section__title {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+.matt-drives__content p {
+    color: var(--color-text-light);
+    margin-bottom: 1.25rem;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
 /* Values */
 .values__grid {
     display: grid;
@@ -2319,6 +2372,8 @@ h1, h2, h3, h4, h5, h6 {
     .blog-card--horizontal .blog-card__placeholder { min-height: 180px; aspect-ratio: 16/9; }
 
     .about-story__grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .meet-matt__grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .meet-matt__photo-wrapper { max-width: 400px; margin: 0 auto; }
     .services__grid { grid-template-columns: 1fr; }
     .stats__grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
     .testimonials__grid { grid-template-columns: 1fr; }
