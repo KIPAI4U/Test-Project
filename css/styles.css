@@ -1348,6 +1348,16 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.5rem;
 }
 
+/* Matt Signature */
+.meet-matt__content .matt-signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
 /* What Drives Matt */
 .matt-drives__content {
     max-width: 800px;
