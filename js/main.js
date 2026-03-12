@@ -153,4 +153,77 @@ document.addEventListener('DOMContentLoaded', () => {
             formSuccess.hidden = false;
         });
     }
+
+    // --- Before/After Image Slider ---
+    const sliders = document.querySelectorAll('[data-before-after-slider]');
+
+    sliders.forEach(slider => {
+        const container = slider.querySelector('.before-after-slider__container');
+        const beforeClip = slider.querySelector('.before-after-slider__before-clip');
+        const beforeImg = slider.querySelector('.before-after-slider__image--before');
+        const handle = slider.querySelector('.before-after-slider__handle');
+
+        if (!container || !beforeClip || !handle) return;
+
+        let isDragging = false;
+        let sliderPosition = 50;
+
+        function setPosition(percent) {
+            percent = Math.max(2, Math.min(98, percent));
+            sliderPosition = percent;
+            beforeClip.style.width = percent + '%';
+            handle.style.left = percent + '%';
+            if (beforeImg) {
+                beforeImg.style.width = container.offsetWidth + 'px';
+            }
+            handle.setAttribute('aria-valuenow', Math.round(percent));
+        }
+
+        function getPercent(e) {
+            const rect = container.getBoundingClientRect();
+            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            return ((clientX - rect.left) / rect.width) * 100;
+        }
+
+        function onStart(e) {
+            isDragging = true;
+            slider.classList.add('before-after-slider--active');
+            e.preventDefault();
+            setPosition(getPercent(e));
+        }
+
+        function onMove(e) {
+            if (!isDragging) return;
+            e.preventDefault();
+            requestAnimationFrame(() => setPosition(getPercent(e)));
+        }
+
+        function onEnd() {
+            if (!isDragging) return;
+            isDragging = false;
+            slider.classList.remove('before-after-slider--active');
+        }
+
+        container.addEventListener('mousedown', onStart);
+        document.addEventListener('mousemove', onMove);
+        document.addEventListener('mouseup', onEnd);
+
+        container.addEventListener('touchstart', onStart, { passive: false });
+        document.addEventListener('touchmove', onMove, { passive: false });
+        document.addEventListener('touchend', onEnd);
+
+        handle.setAttribute('tabindex', '0');
+        handle.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') { e.preventDefault(); setPosition(sliderPosition - 2); }
+            else if (e.key === 'ArrowRight') { e.preventDefault(); setPosition(sliderPosition + 2); }
+        });
+
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => setPosition(sliderPosition), 100);
+        });
+
+        setPosition(50);
+    });
 });
