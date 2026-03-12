@@ -711,10 +711,13 @@ h1, h2, h3, h4, h5, h6 {
 .before-after-slider {
     margin-bottom: 1.5rem;
     max-width: 70%;
-    max-height: 600px;
-    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+}
+.before-after-slider img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 .before-after-slider__container {
     position: relative;
