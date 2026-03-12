@@ -656,6 +656,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ============================================
    PROJECT DETAIL PAGE
    ============================================ */
+.project-detail p { text-align: justify; }
 .project-detail__before-after { margin-bottom: 4rem; }
 .project-detail__section-title {
     font-size: 1.5rem;
