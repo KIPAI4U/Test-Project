@@ -709,6 +709,9 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------- Before/After Slider ---------- */
 .before-after-slider {
     margin-bottom: 1.5rem;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .before-after-slider__container {
     position: relative;
@@ -2506,6 +2509,7 @@ h1, h2, h3, h4, h5, h6 {
     .services-landing__grid { grid-template-columns: 1fr; }
     .service-landing-card__content ul { grid-template-columns: 1fr; }
     .before-after__grid { grid-template-columns: 1fr; }
+    .before-after-slider { max-width: 85%; }
     .before-after-slider__handle-knob { width: 40px; height: 40px; }
     .gallery__grid { grid-template-columns: repeat(2, 1fr); }
     .about-trust__grid { grid-template-columns: 1fr; }
@@ -2525,6 +2529,7 @@ h1, h2, h3, h4, h5, h6 {
     .credibility-bar__grid { grid-template-columns: 1fr; }
     .cta__buttons { flex-direction: column; }
     .cta__buttons .btn { width: 100%; }
+    .before-after-slider { max-width: 100%; }
     .before-after-slider__handle-knob { width: 36px; height: 36px; }
     .before-after-slider__label { font-size: 0.65rem; padding: 0.2rem 0.6rem; }
 }
