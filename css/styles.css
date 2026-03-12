@@ -707,6 +707,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ---------- Before/After Slider ---------- */
+/* before-after slider sizing */
 .before-after-slider {
     margin-bottom: 1.5rem;
     max-width: 55%;
